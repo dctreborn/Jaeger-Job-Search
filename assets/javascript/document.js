@@ -6,6 +6,7 @@ window.onload = function() {
 
 		var type = $("#job-input").val().trim();
 
+		// added my t.p and t.k from what glassdoor sent me, need to figure out "userip" and "useragent"
 		var queryURL = "http://api.glassdoor.com/api/api.htm?t.p=129054&t.k=jwRaV7Sf7yU&userip=0.0.0.0&useragent=&format=json&v=1&action=jobs-stats&q="+type+"&returnStates=true&admLevelRequested=1";
 
 		console.log(queryURL);
